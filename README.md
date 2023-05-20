@@ -7,3 +7,15 @@ It creates two FIFOs with names "myfifo" and "myfifo2". The server waits for req
 
 In this program, the FIFOs work unidirectionally. The client program writes messages to the REQUEST_FIFO and reads responses from the RESPONSE_FIFO, while the server program writes responses to the RESPONSE_FIFO and reads requests from the REQUEST_FIFO. This creates a unidirectional flow of information between the client and the server.
 This ensures that the server and client are not trying to read and write the same FIFO at the same time, which provides a basic level of synchronization.
+
+## To run
+
+After downloading code on your computer, unzip it and specify the folder. In the folder which contains the files above, open terminal.
+
+>> make
+This will make your program compiled. To run it, you should open one more terminal. On each terminal, you should input these seperate commands: 
+>> ./server
+>> ./client
+
+On client side, enter trying 'hi', 'hola' and any other strings.
+Server will respond it and you will see responses on client side again.
