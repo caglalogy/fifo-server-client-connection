@@ -12,10 +12,13 @@ This ensures that the server and client are not trying to read and write the sam
 
 After downloading code on your computer, unzip it and specify the folder. In the folder which contains the files above, open terminal.
 
->> make
+`make`
+
 This will make your program compiled. To run it, you should open one more terminal. On each terminal, you should input these seperate commands: 
->> ./server
->> ./client
+
+`./server`
+
+`./client`
 
 On client side, enter trying 'hi', 'hola' and any other strings.
 Server will respond it and you will see responses on client side again.
